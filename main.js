@@ -9,10 +9,10 @@ const app = new PIXI.Application({
   backgroundColor: 0x000000,
 });
 document.body.append(app.view);
-window.addEventListener("resize", () =>{
+/*window.addEventListener("resize", () =>{
   app.view.width = document.body.clientWidth;
   app.view.height = document.body.clientHeight;
-});
+});*/
 // pointerData
 const pointerData = {
   lastTime: 0,
