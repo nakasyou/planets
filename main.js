@@ -3,7 +3,7 @@ window.onload = () => {
 window.addEventListener("error", e=>{
   document.body.innerHTML = (e.error.name+": "+e.error.message +"\n"+e.error.stack).replaceAll("\n","<br>");
 });
-
+alert(window.innerHeight)
 const w = window.innerWidth;
 const h = window.innerHeight;
 
