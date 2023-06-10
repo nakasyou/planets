@@ -191,7 +191,7 @@ class Scene {
     for(const i of range(2048)){
       const planet = new RotatePlanet({
         z: 1,
-        r: 50,
+        r: 70,
         color: 0xffffff,
       });
       
