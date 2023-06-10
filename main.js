@@ -1,18 +1,24 @@
 window.addEventListener("error", e=>{
   document.body.innerHTML = (e.error.name+": "+e.error.message +"\n"+e.error.stack).replaceAll("\n","<br>");
 });
+
+const w = document.body.clientWidth;
+const h = document.body.clientHeight;
+
 const app = new PIXI.Application({
-  width: 480,
-  height: 360,
+  width: w,
+  height: h,
   resolution: window.devicePixelRatio || 1,
   autoResize: true,
   backgroundColor: 0x000000,
 });
 document.body.append(app.view);
+
 /*window.addEventListener("resize", () =>{
   app.view.width = document.body.clientWidth;
   app.view.height = document.body.clientHeight;
 });*/
+
 // pointerData
 const pointerData = {
   lastTime: 0,
@@ -74,8 +80,8 @@ class Planet{
     const x = this.x;
     const y = this.y;
     const z = this.z + 15;
-    this.raw.x = x / z *50 + 100;
-    this.raw.y = y / z *50 + 100;
+    this.raw.x = x / z * 400 + w/4;
+    this.raw.y = y / z * 400 + h/4;
     this.raw.r = this.r / z;
   }
   get x(){
