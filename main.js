@@ -1,3 +1,5 @@
+window.onload = () => {
+
 window.addEventListener("error", e=>{
   document.body.innerHTML = (e.error.name+": "+e.error.message +"\n"+e.error.stack).replaceAll("\n","<br>");
 });
@@ -255,3 +257,4 @@ function step(time){
 }
 
 step();
+}
