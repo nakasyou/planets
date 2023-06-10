@@ -9,7 +9,7 @@ const app = new PIXI.Application({
   width: w,
   height: h,
   resolution: window.devicePixelRatio || 1,
-  autoResize: true,
+  //autoResize: true,
   backgroundColor: 0x000000,
 });
 document.body.append(app.view);
