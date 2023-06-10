@@ -2,8 +2,8 @@ window.addEventListener("error", e=>{
   document.body.innerHTML = (e.error.name+": "+e.error.message +"\n"+e.error.stack).replaceAll("\n","<br>");
 });
 
-const w = document.body.clientWidth;
-const h = document.body.clientHeight;
+const w = window.innerWidth;
+const h = window.innerHeight;
 
 const app = new PIXI.Application({
   width: w,
