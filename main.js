@@ -2,8 +2,8 @@ window.addEventListener("error", e=>{
   document.body.innerHTML = (e.error.name+": "+e.error.message +"\n"+e.error.stack).replaceAll("\n","<br>");
 });
 const app = new PIXI.Application({
-  width: document.body.clientWidth,
-  height: document.body.clientHeight,
+  width: 480,
+  height: 360,
   resolution: window.devicePixelRatio || 1,
   autoResize: true,
   backgroundColor: 0x000000,
