@@ -1,0 +1,44 @@
+<!doctype html>
+ 
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    
+    <title>Planets Neo</title>
+    <meta name="description" content="とあるオプチャの課題" />
+    
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+    body{
+      margin:0;
+      padding:0;
+      font-family: Sans-Serif;
+    }
+    .mono{
+      font-family: 'Roboto Mono', monospace;
+    }
+    </style>
+  </head>
+  <body>
+    <div style="position:fixed;top:0;left:0; color:#fff;">
+      <div>
+        <input type="range" id="n-range" value="100" min="2" max="2048">
+        <label>数</label>
+        <span id="n" class="mono">100</span>
+      </div>
+      <div>
+        <input type="range" id="size-range" value="500" min="10" max="1000">
+        <label>大きさ</label>
+      </div>
+      <div>
+        <input type="range" id="view-range" value="1500" min="10" max="1500">
+        <label>視点</label>
+      </div>
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/7.2.4/pixi.min.js" integrity="sha512-Ch/O6kL8BqUwAfCF7Ie5SX1Hin+BJgYH4pNjRqXdTEqMsis1TUYg+j6nnI9uduPjGaj7DN4UKCZgpvoExt6dkw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
